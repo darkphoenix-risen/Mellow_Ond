@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/04_product page.css">
+</head>
+<body>
+
+      <main>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="bag1"></div></div>
+          <div class="swiper-slide"><div class="bag2"></div></div>
+        </div>
+      </div>
+
+      <!-- 사이드 메뉴 (상단 가로형으로 변형됨) -->
+      <aside class="sidebar">
+        <nav class="side-menu">
+          <li>
+            <a href="#">MELLOW OND</a>
+            <ul class="submenu">
+              <li><a href="#">brand story</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BOWLS</a>
+            <ul class="submenu">
+              <li><a href="#">밥그릇</a></li>
+              <li><a href="#">국그릇</a></li>
+              <li><a href="#">대접</a></li>
+              <li><a href="#">면기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PLATES</a>
+            <ul class="submenu">
+              <li><a href="#">대접시</a></li>
+              <li><a href="#">중접시</a></li>
+              <li><a href="#">소접시</a></li>
+              <li><a href="#">종지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">CAFE</a>
+            <ul class="submenu">
+              <li><a href="#">커피컵</a></li>
+              <li><a href="#">머그컴</a></li>
+              <li><a href="#">유리컵</a></li>
+              <li><a href="#">에스프레잔</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PROPS</a>
+            <ul class="submenu">
+              <li><a href="#">냅킨</a></li>
+              <li><a href="#">테이블매트</a></li>
+            </ul>
+          </li>
+          <!-- 오른쪽 끝 로그인 메뉴 -->
+          <div class="header-right">
+            <a href="./02_login.html" class="login-btn">LOGIN</a>
+          </div>
+
+          <!--  마이페이지  -->
+          <div class="header-right2">
+            <a href="./03_mypage.html" class="mypage-btn">MYPAGE</a>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- 메인 슬라이더가 들어갈 영역 -->
+      <main class="main-slider">
+        <!-- 여기에 Swiper나 Slick 슬라이더 코드를 넣으세요 -->
+      </main>
+    
+
+      <!-- // -->
+
+      
+      <!--  상품페이지 이미지  -->
+
+  <div class="product-container">
+  <!-- 1. 메인 이미지 -->
+  <div class="product-image">
+    <img src="./IMG/459d3fd4dfd0f9832b97c266b6978906.jpg" alt="상품 대표 이미지">
+  </div>
+ <!-- 섬네일 이미지 3개 -->
+  <div class="thumb-group">
+    <img src="./IMG/103a4e51d9cf88f46dd8eca116e17391.jpg" class="thumb" onclick="changeImg(this.src)">
+    <img src="./IMG/2a10127fb745a1861c3f434912c95559.jpg" class="thumb" onclick="changeImg(this.src)">
+    <img src="./IMG/562346fc314e1db1c4e6d4539e59212d.jpg" class="thumb" onclick="changeImg(this.src)">
+    <img src="./IMG/I_need_a_202602152020.jpeg" class="thumb" onclick="changeImg(this.src)">
+  </div>
+
+
+
+  <!-- 2. 상품 정보 및 구매 섹션 -->
+  <div class="product-info">
+    <h2>[프리미엄] 올인원 미니 가습기</h2>
+    <p class="price"><strong>39,000원</strong></p>
+    <hr>
+
+    <!-- 옵션 선택 -->
+    <div class="option-select">
+      <label>색상 선택</label>
+      <select>
+        <option>화이트 (재고 있음)</option>
+        <option>스카이블루 (품절)</option>
+      </select>
+    </div>
+
+    <!-- 버튼 그룹 -->
+    <div class="button-group">
+      <button class="btn-cart">장바구니</button>
+      <button class="btn-buy">바로 구매하기</button>
+      <button class="btn-list">찜</button>
+    </div>
+    </div>
+    </div>
+
+    <!-- // -->
+
+    <div class="product-tabs">
+  <div class="tab-item active">
+   <span class="text">상세설명</span>
+  </div>
+  <div class="tab-item">
+    <span class="text">상품후기</span>
+  </div>
+  <div class="tab-item">
+    <span class="text">상품문의</span>
+  </div>
+  <div class="tab-item">
+    <span class="text">Q&A</span>
+  </div>
+</div>
+ 
+</body>
+</html>

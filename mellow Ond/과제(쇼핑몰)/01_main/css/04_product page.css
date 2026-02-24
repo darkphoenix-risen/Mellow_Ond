@@ -1,0 +1,390 @@
+/*  상단 메뉴판  */
+
+/* 기본 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 레이아웃: 슬라이더 위에 메뉴 올리기 */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(170, 144, 120, 0.2); /* 투명도 조절 */
+  transition: background 0.3s;
+}
+
+.sidebar:hover {
+  background: rgba(151, 138, 123, 0.8); /* 마우스 올리면 배경 진하게 */
+}
+
+/* 메인 메뉴 가로 정렬 */
+.side-menu {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.side-menu > li {
+  position: relative;
+  width: 160px;
+  text-align: center;
+}
+
+.side-menu > li > a {
+  display: block;
+  padding: 25px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  max-height: 0; /* 평소엔 높이 0 */
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 마우스 올렸을 때 서브메뉴 노출 */
+.side-menu > li:hover .submenu {
+  max-height: 400px; /* 서브메뉴 높이에 맞게 넉넉히 설정 */
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 0;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.submenu li a:hover {
+  background: #f8f8f8;
+  color: #383838;
+}
+
+/* 메인 슬라이더 (예시 높이) */
+.main-slider {
+  width: 100%;
+  height: 0;
+  background: #ffffff; /* 슬라이더 라이브러리(Swiper 등)가 들어갈 자리 */
+}
+
+
+
+/* 로그인  */
+/* 3. 로그인 버튼 디자인 */
+.header-right { 
+               position: absolute;
+               transform: translateX(750px);
+               margin-top: 22px;               
+}
+.login-btn {
+  font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 5px 16px;
+  border: 1px solid #333; /* 테두리선 */
+  border-radius: 27px; /* 둥근 버튼 형태 */
+  transition: all 0.3s ease; /* 부드러운 효과 */
+}
+
+/* 4. 마우스 호버 효과 */
+.login-btn:hover {
+  background-color: #333; /* 배경색이 차오름 */
+  color: #fff; /* 글자색 변경 */
+}
+/* // */
+/* 마이페이지  */ 
+.header-right2 { 
+               position: absolute;
+               transform: translateX(850px);
+               margin-top: 22px;               
+}
+.mypage-btn {
+  font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 5px 16px;
+  border: 1px solid #333; /* 테두리선 */
+  border-radius: 27px; /* 둥근 버튼 형태 */
+  transition: all 0.3s ease; /* 부드러운 효과 */
+}
+
+/* 4. 마우스 호버 효과 */
+.mypage-btn:hover {
+  background-color: #333; /* 배경색이 차오름 */
+  color: #fff; /* 글자색 변경 */
+}
+
+
+/* // */
+
+/* 상품페이지  */
+
+.product-image {
+  width: 50%;
+  height: 400px; /* 고정 높이를 주면 확대 시 다른 UI가 밀리지 않음 */
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+                    width: 500px;
+                    height: 500px;
+              }
+
+
+/* 상품이름 부터 */
+
+/* 1. 전체 컨테이너: 이미지와 정보가 나란히 배치됨 */
+.product-container {
+  display: flex;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 150px auto;
+  padding: 20px;
+  align-items: flex-start; /* 내용 높이가 달라도 상단 정렬 */
+}
+
+/* 2. 상품 이미지 영역: overflow: hidden의 핵심 */
+.product-image {
+  flex: 1;
+  position: relative;
+  aspect-ratio: 1 / 1; /* 정정사각형 유지 */
+  border-radius: 15px; /* 모서리를 둥글게 */
+  overflow: hidden;    /* 내부 이미지가 확대되어도 테두리 밖으로 안 나감 */
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 이미지 비율 유지하며 꽉 채움 */
+  transition: transform 0.5s ease; /* 확대 애니메이션 속도 */
+}
+
+/* 마우스를 올리면 이미지가 박스 안에서만 확대됨 */
+.product-image:hover img {
+  transform: scale(1.1);
+}
+
+/* 3. 상품 정보 영역 */
+.product-info {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.price {
+  font-size: 32px;
+  color: #e63946; /* 가격 강조색 */
+  margin-bottom: 25px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+/* 4. 옵션 선택 스타일 */
+.option-select {
+  margin-bottom: 40px;
+}
+
+.option-select label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.option-select select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* 5. 버튼 그룹: 장바구니와 구매 버튼 */
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button-group button {
+  flex: 1;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+/* 장바구니 버튼 (연한 스타일) */
+.btn-cart {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.btn-cart:hover {
+  background-color: #e5e5e5;
+}
+
+/* 바로 구매하기 버튼 (강렬한 스타일) */
+.btn-buy {
+  background-color: #111;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: #333;
+  transform: translateY(-2px); /* 살짝 떠오르는 효과 */
+}
+
+
+/*  찜 list */
+.btn-list {
+  background-color: #f3f3f3;
+  color: #000000;
+}
+
+.btn-list:hover {
+  background-color: #808080;
+  transform: translateY(-2px); /* 살짝 떠오르는 효과 */
+}
+
+
+/* 반응형: 모바일에서는 세로 1줄로 */
+@media (max-width: 850px) {
+  .product-container {
+    flex-direction: column;
+  }
+  .product-image {
+    width: 100%;
+  }
+}
+
+/* // */
+
+
+/*  썸네일 이미지 */
+.product-image {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse; /* 위(메인) 아래(섬네일) 배치 */
+  gap: 10px;
+  position: relative;
+  left: 40px;
+}
+
+.main-img-container {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.main-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* 사진 사이 간격 */
+  width: 92px;
+}
+
+.thumb {
+  flex: 1; /* 3개가 동일한 너비를 가짐 */
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.thumb:hover {
+  border-color: #333; /* 마우스 올리면 강조 */
+}
+
+
+/* // */
+/* 상세설명, 상품문의, 상품리뷰, q&a */
+.product-tabs {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #eee;
+  margin-top: 40px;
+}
+
+.tab-item {
+  flex: 1; /* 4개 메뉴가 동일한 너비 점유 */
+  display: flex;
+  flex-direction: column; /* 아이콘이 위, 글자가 아래 */
+  align-items: center;    /* 가운데 정렬 */
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+}
+
+/* 마우스를 올리거나 활성화(active) 되었을 때 */
+.tab-item:hover, .tab-item.active {
+  color: #6d6d6d;
+  border-bottom: 3px solid #cfcfcf; /* 아래쪽 강조선 */
+  font-weight: bold;
+}
+
+.tab-item .icon {
+  font-size: 24px; /* 아이콘 크기 */
+  margin-bottom: 5px;
+}
+
+.tab-item .text {
+  font-size: 14px;
+}
+

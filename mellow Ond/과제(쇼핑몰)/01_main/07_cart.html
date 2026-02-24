@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/07_cart.css">
+  </head>
+  <body>
+    <div class="cart-wrapper">
+      <header class="cart-header">
+        <h1>장바구니 카트</h1>
+      </header>
+
+      <main class="cart-list" id="cart-items">
+        <!-- 제품 아이템 (샘플) -->
+        <!-- 제품 1 -->
+        <article class="cart-item">
+          <div class="item-img"></div>
+          <div class="item-details">
+            <h2 class="item-title">프리미엄 무선 헤드폰</h2>
+            <p class="item-price">299,000원</p>
+          </div>
+          <div class="item-quantity">
+            <button type="button" class="qty-btn">-</button>
+            <span class="qty-num">1</span>
+            <button type="button" class="qty-btn">+</button>
+          </div>
+          <button type="button" class="delete-btn">삭제</button>
+        </article>
+        <!--  제품2 -->
+        <article class="cart-item">
+          <div class="item-img"></div>
+          <div class="item-details">
+            <h2 class="item-title">기계식 키보드</h2>
+            <p class="item-price">159,000원</p>
+          </div>
+          <div class="item-quantity">
+            <button type="button" class="qty-btn">-</button>
+            <span class="qty-num">2</span>
+            <button type="button" class="qty-btn">+</button>
+          </div>
+          <button type="button" class="delete-btn">삭제</button>
+        </article>
+      </main>
+
+      <footer class="cart-summary">
+        <div class="summary-row">
+          <span>총 상품 금액</span>
+          <span id="total-amount">617,000원</span>
+        </div>
+        <button type="button" class="checkout-btn">주문하기</button>
+      </footer>
+    </div>
+  </body>
+</html>

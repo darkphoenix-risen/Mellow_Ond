@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/06_menu밥그릇.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="bag1"></div></div>
+          <div class="swiper-slide"><div class="bag2"></div></div>
+        </div>
+      </div>
+
+    <!-- 사이드 메뉴 (상단 가로형으로 변형됨) -->
+      <aside class="sidebar">
+        <nav class="side-menu">
+          <li>
+            <a href="./01_mainpage.html">MELLOW OND</a>
+            <ul class="submenu">
+              <li><a href="#">brand story</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./06_menu밥그릇.html">BOWLS</a>
+            <ul class="submenu">
+              <li><a href="./06_menu밥그릇.html">밥그릇</a></li>
+              <li><a href="./09_menu국그릇.html">국그릇</a></li>
+              <li><a href="./11_menu대접.html">대접</a></li>
+              <li><a href="./10_menu면기.html">면기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./12_menu대접시.html">PLATES</a>
+            <ul class="submenu">
+              <li><a href="./12_menu대접시.html">대접시</a></li>
+              <li><a href="./13_menu중접시.html">중접시</a></li>
+              <li><a href="./14_menu소접시.html">소접시</a></li>
+              <li><a href="./15_menu종지.html">종지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./16_menu커피컵.html">CAFE</a>
+            <ul class="submenu">
+              <li><a href="./16_menu커피컵.html">커피컵</a></li>
+              <li><a href="./17_menu머그컵.html">머그컴</a></li>
+              <li><a href="./18_menu유리컵.html">유리컵</a></li>
+              <li><a href="./21_menu테이블매트.html">에스프레잔</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./20_menu냅킨.html">PROPS</a>
+            <ul class="submenu">
+              <li><a href="./20_menu냅킨.html">냅킨</a></li>
+              <li><a href="./21_menu테이블매트.html">테이블매트</a></li>
+            </ul>
+          </li>
+
+          <div class="search-container">
+            <form action="/search" method="GET" class="search-form">
+              <div class="search-input-wrapper">
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="찾으시는 상품을 검색해보세요!"
+                  aria-label="검색어 입력"
+                />
+                <button type="submit" class="search-btn">
+                  <!-- 돋보기 아이콘 (SVG) -->
+                  <svg
+                    xmlns="http://www.w3.org"
+                    width="10"
+                    height="10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- 메인 슬라이더가 들어갈 영역 -->
+      <main class="main-slider">
+        <!-- 여기에 Swiper나 Slick 슬라이더 코드를 넣으세요 -->
+      </main>
+    </main>
+
+    <nav class="horizontal-menu">
+      <ul>
+        <li><a href="./16_menu커피컵.html">커피컵</a></li>
+        <li><a href="./17_menu머그컵.html">머그컵</a></li>
+        <li><a href="./18_menu유리컵.html">유리컵</a></li>
+        <li><a href="./19_menu에스프레소잔.html">에스프레소진</a></li>
+      </ul>
+    </nav>
+
+    <!-- // -->
+
+
+    
+    <!-- 하단 상품이미지 -->
+    <div class="container-box5">
+      <!-- <div class="new-label3">Best product</div> -->
+      <div class="new-label4"></div>
+
+      <div class="product-class5">
+        <div class="product5">
+          <img src="./IMG/103a4e51d9cf88f46dd8eca116e17391.jpg" alt="빈이미지" />
+
+          <p>에스카 </p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/295b5edd3d0f840079e03e276e00d668.jpg" alt="빈이미지" />
+
+          <p>노벨라</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/이미지1.jpg" alt="빈이미지" />
+
+          <p>벨로아</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/메인페이지.jpeg" alt="빈이미지" />
+          <p>세린</p>
+          <p>10000원</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-box5">
+      <div class="product-class5">
+        <div class="product5">
+          <img src="./IMG/이미지2.jpg" alt="빈이미지" />
+
+          <p>아르벨</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/이미지3.jpg" alt="빈이미지" />
+
+          <p>엘리안</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/이미지1.jpg" alt="빈이미지" />
+
+          <p>라비안</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/메인페이지.jpeg" alt="빈이미지" />
+          <p>아벨린</p>
+          <p>10000원</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container-box5">
+      <div class="product-class5">
+        <div class="product5">
+          <img src="./IMG/이미지2.jpg" alt="빈이미지" />
+
+          <p>세르엘 </p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/이미지3.jpg" alt="빈이미지" />
+
+          <p>샤넬 잔 </p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/이미지1.jpg" alt="빈이미지" />
+
+          <p>라비안 잔</p>
+          <p>10000원</p>
+        </div>
+        <div class="product5">
+          <img src="./IMG/메인페이지.jpeg" alt="빈이미지" />
+          <p>하르엘 잔</p>
+          <p>10000원</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- // -->
+
+
+    
+  <br>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <br>
+    
+    
+    <!--  제이쿼리 주소  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
+    <!-- Swiper JS & CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net" />
+    <script src="https://cdn.jsdelivr.net"></script>
+  </body>
+</html>
