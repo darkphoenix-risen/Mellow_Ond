@@ -1,0 +1,712 @@
+/* CSS 파일 최상단에 추가 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+
+.swiper-wrapper {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+.bag1 {
+  /* 가로 */
+  width: 100%;
+  /* 세로 */
+  height: 70vh;
+  /* 배경 이미지 */
+  background-image: url("../IMG/메인이미지1-2.png");
+  /* 반복 멈춤 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 가로 모두 채우기(훼손) */
+  background-size: cover;
+  /* 이미지의 중심을 보여주는 옵션 */
+  background-position: center;
+}
+
+.bag2 {
+  /* 가로 */
+  width: 100%;
+  /* 세로 */
+  height: 70vh;
+  /* 배경 이미지 */
+  background-image: url("../IMG/메인이미지2-2.png");
+  /* 반복 멈춤 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 가로 모두 채우기(훼손) */
+  background-size: cover;
+  /* 이미지의 중심을 보여주는 옵션 */
+  background-position: center;
+}
+
+
+/* // */
+
+
+/*  상단 메뉴판  */
+
+/* 기본 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 레이아웃: 슬라이더 위에 메뉴 올리기 */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(170, 144, 120, 0.2); /* 투명도 조절 */
+  transition: background 0.3s;
+}
+
+.sidebar:hover {
+  background: rgba(151, 138, 123, 0.8); /* 마우스 올리면 배경 진하게 */
+}
+
+/* 메인 메뉴 가로 정렬 */
+.side-menu {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.side-menu > li {
+  position: relative;
+  width: 160px;
+  text-align: center;
+}
+
+.side-menu > li > a {
+  display: block;
+  padding: 25px 0;
+  color: #5f5550;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  max-height: 0; /* 평소엔 높이 0 */
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 마우스 올렸을 때 서브메뉴 노출 */
+.side-menu > li:hover .submenu {
+  max-height: 400px; /* 서브메뉴 높이에 맞게 넉넉히 설정 */
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 0;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.submenu li a:hover {
+  background: #f8f8f8;
+  color: #000;
+}
+
+/* 메인 슬라이더 (예시 높이) */
+.main-slider {
+  width: 100%;
+  height: 0;
+  background: #ffffff; /* 슬라이더 라이브러리(Swiper 등)가 들어갈 자리 */
+}
+
+
+
+/* 로그인  */
+/* 3. 로그인 버튼 디자인 */
+.header-right { 
+               position: absolute;
+               transform: translateX(760px);
+               margin-top: 22px;               
+}
+.login-btn {
+  font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 3px 13px;
+
+  transition: all 0.3s ease; /* 부드러운 효과 */
+}
+
+/* 4. 마우스 호버 효과 */
+.login-btn:hover {
+  background-color: #333; /* 배경색이 차오름 */
+  color: #fff; /* 글자색 변경 */
+}
+
+
+/* // */
+/* 마이페이지 */
+.header-right2 { 
+               position: absolute;
+               transform: translateX(825px);
+               margin-top: 22px;               
+}
+.mypage-btn {
+  font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 3px 13px;
+  transition: all 0.3s ease; /* 부드러운 효과 */
+}
+
+/* 4. 마우스 호버 효과 */
+.mypage-btn:hover {
+  background-color: #333; /* 배경색이 차오름 */
+  color: #fff; /* 글자색 변경 */
+}
+
+
+/* 마이페이지 */
+.header-right3 { 
+               position: absolute;
+               transform: translateX(880px);
+               margin-top: 22px;               
+}
+.cart-btn {
+  font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #333;
+  padding: 3px 13px;
+  transition: all 0.3s ease; /* 부드러운 효과 */
+}
+
+/* 4. 마우스 호버 효과 */
+.cart-btn:hover {
+  background-color: #333; /* 배경색이 차오름 */
+  color: #fff; /* 글자색 변경 */
+}
+
+
+/* // /
+
+/ 할인 이벤트 이미지링크/
+/* 공통 스타일 및 컨테이너 */
+.promo-banner-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto; /* 위아래 여백 */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.promo-banner-wrapper {
+    display: flex;
+    gap: 24px; /* 배너 사이 간격 */
+    justify-content: center;
+}
+
+/* 개별 배너 아이템 */
+.promo-item {
+    flex: 1;
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.3s ease;
+}
+
+.promo-item:hover {
+    transform: translateY(-8px); /* 마우스 올렸을 때 위로 띄움 */
+}
+
+/* 이미지 박스 */
+.image-box {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 2.5; /* 이미지 비율 유지 */
+    object-fit: cover;
+}
+
+/* 배너 디자인 (SALE, BEST) */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #e84118;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 800;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+.badge.black {
+    background-color: #2f3640;
+}
+
+/* 텍스트 영역 */
+.text-box {
+    padding: 18px 5px;
+}
+
+.sub-title {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin: 0 0 6px 0;
+}
+
+.main-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+    word-break: keep-all; /* 한글 줄바꿈 최적화 */
+}
+
+/* 모바일 반응형 처리 (태블릿/모바일) */
+@media (max-width: 768px) {
+    .promo-banner-wrapper {
+        flex-direction: column; /* 세로로 쌓기 */
+        gap: 35px;
+    }
+    
+    .promo-item:hover {
+        transform: none; /* 모바일은 호버 효과 제거 */
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+}
+
+/* // */
+
+/* 상품이미지  */
+.container-box {
+  width: 100%;
+  height: 3000px;
+}
+
+.product-class3 {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  transform: translateX(430px);
+  margin-top: 80px;
+}
+.product3 img {
+  width: 350px;
+  height: 350px;
+  /* margin: 7px; */
+}
+
+/* 부모 박스 설정 */
+.product3 {
+  position: relative; /* 자식인 .product-info의 기준점 */
+  bottom: 40px;
+  overflow: hidden; /* 박스를 벗어나는 이미지/정보 숨김 */
+  cursor: pointer;
+}
+
+.product3 img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease; /* 이미지 살짝 커지는 효과 (선택사항) */
+
+}
+
+/* 투명한 막(Overlay)과 텍스트 설정 */
+.product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 144, 133, 0.6); /* 검은색 투명도 60% */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  /* 처음에는 안 보이게 설정 */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 마우스를 올렸을 때 나타나는 효과 */
+.product3:hover .product-info {
+  opacity: 2;
+}
+
+/* 마우스를 올렸을 때 이미지 확대 (선택사항) */
+.product3:hover img {
+  transform: scale(1.1);
+}
+
+/* 내부 텍스트 스타일 */
+.product-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+.product-info p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 13px;
+}
+.product-info span {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* // */
+
+/*  설명 페이지  */
+
+/* // */
+
+
+/* // */
+
+/* 슬라이더 이미지  */
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  bottom: 1700px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(400px * 10); /* 이미지 너비 × 총 개수 */
+  animation: scroll 20s linear infinite;
+}
+
+.slide-track img {
+  width: 270px;
+  height: 170px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* 자동 흐름 애니메이션 */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * 5));
+  }
+}
+
+/* // */
+
+/*  중앙 메뉴 아이콘  */
+
+/*  중앙메뉴  */
+.menu-swiper-container {
+  width: 100%;
+  max-width: 500px; /* 쇼핑몰의 메인 폭에 맞게 조절 */
+  margin: 0 auto;  /* 중앙 정렬 */
+  overflow: hidden;
+
+}
+
+.swiper-slide {
+  width: auto; /* 글자 길이에 맞게 너비 자동 조절 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px; */
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  color: #7e6d61;
+  font-weight: 200;
+  white-space: nowrap; /* 글자 줄바꿈 방지 */
+  margin: 0 15px;
+  display: block;
+  gap: 50px;
+}
+
+.swiper-slide a:hover {
+  color: #ac9b88; /* 마우스 올렸을 때 강조색 */
+}
+
+/* 메뉴 전체를 감싸는 컨테이너의 높이와 여백을 강제 고정 */
+.menu-swiper-container {
+  height: 50px !important; /* 전체 높이를 50px로 확 줄임 */
+  padding: 0 !important; /* 안쪽 여백 완전 제거 */
+  margin-top: 0 !important; /* 위쪽 바깥 여백 제거 */
+  margin-bottom: 0 !important; /* 아래쪽 상품과의 여백 제거 */
+  display: flex;
+  align-items: center; /* 줄어든 높이 안에서 메뉴 글자를 정중앙에 배치 */
+}
+
+/* 메뉴 글자 사이의 불필요한 높이 제거 */
+.swiper-slide a {
+  line-height: 50px !important; /* 위 컨테이너 높이와 똑같이 맞춰서 중앙 정렬 */
+  display: block;
+}
+
+/* 메뉴 바로 다음에 오는 상품 섹션의 위쪽 빈 공간 제거 */
+.menu-swiper-container + div,
+.product-section,
+.main-list {
+  margin-top: -10px !important; /* 마이너스 마진으로 상품 이미지를 위로 끌어올림 */
+}
+
+/* 서브메뉴 기본 상태 (숨김 & 애니메이션 준비) */
+.submenu2 {
+  list-style: none;
+  padding: 3px 0;
+  margin: 0;
+  position: absolute;
+  top: 55%; /* 메인 메뉴 바로 아래 위치 */
+  left: 50%;
+  transform: translateX(50%) translateY(-50px); /* 중앙 정렬 + 살짝 위에서 대기 */
+  width: 130px; /* 서브메뉴 적정 너비 */
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(118, 106, 98, 0.1);
+  z-index: 1000; /* 슬라이더 콘텐츠보다 위에 오도록 */
+
+  /* 부드러운 슬라이딩 효과 */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 마우스 호버 시 나타나는 상태 */
+.swiper-slide:hover .submenu2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-40%) translateY(0); /* 제자리로 부드럽게 내려옴 */
+}
+
+/* 서브메뉴 내부 리스트 아이템 */
+.submenu2 li {
+  width: 100%;
+}
+
+/* 서브메뉴 내부 링크 */
+.submenu2 li a {
+  display: block;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #8d8273;
+  font-size: 14px;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+/* 서브메뉴 링크 호버 효과 */
+.submenu2 li a:hover {
+  background-color: #f8f9fa;
+  color: #403d3b;
+  font-weight: bold;
+}
+
+/* 중요: Swiper 내부에서 서브메뉴가 잘리지 않게 설정 */
+.menu-swiper-container {
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+/* 아이콘 이미지 크기 조절 */
+.menu-link img {
+  width: 40px;  /* 원하는 아이콘 너비 */
+  height: 40px; /* 원하는 아이콘 높이 */
+  object-fit: contain; /* 이미지 비율 유지 */
+  transition: transform 0.3s; /* 마우스 오버 효과용 */
+  margin: 10px;
+}
+.swiper-slide > h1 { font-size: 15px;
+                     font-weight: 500; 
+                     margin: 10px;
+                     display: flex;
+                     justify-content: center;                     
+                     margin-right: 50px;
+                     
+                     
+
+                                   } 
+
+/* // */
+
+/*  하단 상품이미지 */
+
+/* 1. 브라우저 기본 여백 초기화 (이미지가 위로 붙게 함) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-box5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  bottom: 1530px;
+    /* 🔥 이 세 줄을 추가합니다 🔥 */
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;     /* 세로 중앙 정렬 */
+  /* 화면에서 보이지 않던 bottom: 1500px은 제거했습니다 */
+  height: 500px; /* 예시로 높이를 지정했습니다. 실제 사용 환경에 맞게 조절하세요. */
+}
+
+.new-label3{
+            font-size: 2.5rem;            
+            font-weight: 600;
+            position: absolute;
+            transform: translateY(-300px);
+}
+
+.new-label4{ 
+             font-size: 10px;
+             font-weight: 400;
+             position: absolute;
+             transform: translateY(-240px);
+            }
+
+/* 2. 가로 정렬 설정 */
+.product-class5 {
+  display: flex;
+  gap: 7px;
+  align-items: flex-start; /* 자식 요소들을 위쪽 기준(Top)으로 정렬 */
+  margin-top: 100px;
+  }
+
+.product5 {
+  flex: 1; /* 모든 상품 카드가 동일한 너비를 가짐 */
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* 이미지-이름-가격 순서 유지 */
+}
+
+/* 3. 이미지 위치 강제 상단 고정 */
+.product5 img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  display: block;    /* 이미지 하단 미세 여백 제거 */
+  margin-bottom: 45px; /* 이미지와 텍스트 사이 간격만 조절 */
+}
+
+.product5 p {
+  padding: 5 10px;
+}
+
+
+/* // */
+
+
+/* 풋터 작업  */
+/* // */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-container {
+  display: flex; /* 가로 정렬 시작 */
+  justify-content: space-between; /* 섹션들 사이 간격을 동일하게 배치 */
+  align-items: flex-start; /* 상단 기준 정렬 */
+  max-width: 1200px; /* 전체 너비 제한 */
+  margin: 0 auto; /* 화면 중앙 배치 */
+  padding: 30px; /* 안쪽 여백 */
+  position: relative;
+  left: 50px;
+}
+
+/* 내부 섹션들이 너무 붙지 않게 너비 조정 */
+.footer-container > div {
+  flex: 1; /* 공간을 공평하게 나눔 */
+  min-width: 150px;
+}
+.footer-info {
+  margin-right: 70px;
+  font-size: 10px;
+}
+.footer-banking {
+  margin-left: 50px;
+  font-size: 10px;
+}
+.footer-sns {
+  margin-left: 20px;
+  font-size: 10px;
+}
+.footer-phon {
+  margin-left: 20px;
+  font-size: 10px;
+}
+.footer-links {
+  margin-left: 20px;
+  font-size: 10px;
+}
