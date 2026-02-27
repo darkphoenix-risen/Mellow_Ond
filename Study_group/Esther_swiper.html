@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Esther_swiper.css" />
+  </head>
+  <body>
+    <div id="list_tab_Esther">
+      <ul id="list-Esther">
+        <li class="Esther-menu1" >부부/연인여행</li>
+        <li class="Esther-menu2" >우정여행</li>
+        <li class="Esther-menu3" >아동동반여행</li>
+        <li class="Esther-menu4" >가족여행</li>
+        <li class="Esther-menu5" >단체여행</li>
+        <li class="Esther-menu6" >나홀로여행</li>
+      </ul>
+    </div>
+    <div class="tab-swip-Esther1">
+      <span class="first_Esther">
+        <img src="" alt="오사카 여행" />
+        <p>둘만의 로맨틱한 시간, 오사카 감성 여행<br />₩699,000~</p>
+      </span>
+
+      <span id="second_Esther">
+        <img src="" alt="후쿠오카 여행" />
+        <p>친구와 떠나는 가볍고 즐거운 후쿠오카<br />₩499,000~</p>
+      </span>
+
+      <span id="third_Esther">
+        <img src="" alt="도쿄 여행" />
+        <p>아이와 함께 즐기는 도쿄 테마 여행<br />₩899,000~</p>
+      </span>
+
+      <span id="forth_Esther">
+        <img src="" alt="대마도 여행" />
+        <p>가족 모두가 편안한 힐링 여행, 대마도<br />₩359,000~</p>
+      </span>
+    </div>
+
+    <div id="tab-swip-Esther2">
+      <span id="fifth_Esther">
+        <img src="" alt="제주도 여행" />
+        <p>여럿이 함께라 더 즐거운 제주 여행<br />₩299,000~</p>
+      </span>
+
+      <span id="sixth_Esther">
+        <img src="" alt="대만 여행" />
+        <p>혼자서도 충분한 자유 여행, 대만<br />₩649,000~</p>
+      </span>
+
+      <span id="sevth_Esther">
+        <img src="" alt="중국 마카오 여행" />
+        <p>도시의 매력을 한 번에, 중국·마카오<br />₩799,000~</p>
+      </span>
+
+      <span id="eigth_Esther">
+        <img src="" alt="몽골 여행" />
+        <p>끝없는 초원에서 만나는 진짜 쉼, 몽골<br />₩1,590,000~</p>
+      </span>
+    </div>
+  
+    <!-- Swiper JS: 공식사이트) https://swiperjs.com/demos -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+     <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  </body>
+</html>

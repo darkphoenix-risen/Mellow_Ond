@@ -1,0 +1,154 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+}
+
+/* ===== HEADER ===== */
+.site-header-KMJ-PJH {
+  background: #ffffff;
+}
+
+/* 상단 로그인 */
+.top-bar-KMJ-PJH {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 60px;
+}
+
+.login-KMJ-PJH {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  font-size: 13px;
+}
+
+.login-KMJ-PJH a {
+  text-decoration: none;
+  color: #666;
+}
+
+.login-KMJ-PJH a:hover {
+  color: #1a73e8;
+}
+
+/* 중앙 영역 */
+.header-center-KMJ-PJH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 22px 0 20px;
+}
+
+.logo-area-KMJ-PJH {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area-KMJ-PJH img {
+  width: 52px;
+}
+
+.logo-area-KMJ-PJH a {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+/* 검색 */
+.search-box-KMJ-PJH form {
+  display: flex;
+}
+
+.search-box-KMJ-PJH input {
+  width: 300px;
+  padding: 12px 18px;
+  border: 1px solid #d0d7e2;
+  border-radius: 24px 0 0 24px;
+  font-size: 14px;
+}
+
+.search-box-KMJ-PJH input::placeholder {
+  color: #9aa4b2;
+}
+
+.search-box-KMJ-PJH button {
+  padding: 12px 20px;
+  border: none;
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 0 24px 24px 0;
+  cursor: pointer;
+}
+
+.search-box-KMJ-PJH button:hover {
+  background: #155ec2;
+}
+
+/* ===== 메인 메뉴 ===== */
+.main-nav-KMJ-PJH {
+  background: #1a73e8;
+}
+
+.menu-KMJ-PJH {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* 핵심 수정: 각 메뉴 항목이 기준점이 됨 */
+.menu-KMJ-PJH > li {
+  position: relative;
+}
+
+.menu-KMJ-PJH > li > a {
+  display: block;
+  padding: 16px 22px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-KMJ-PJH > li > a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* 드롭다운 */
+.dropdown-KMJ-PJH {
+  display: none;
+  position: absolute;
+  top: 100%; /* 부모 li의 아래에 딱 붙도록 수정 */
+  left: 0;   /* 부모 li의 왼쪽 시작점에 맞춤 */
+  min-width: 190px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  z-index: 100;
+}
+
+.dropdown-KMJ-PJH li {
+  list-style: none;
+}
+
+.dropdown-KMJ-PJH a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-KMJ-PJH a:hover {
+  background: #f1f5fb;
+  color: #1a73e8;
+}
+
+/* 호버 시 드롭다운 표시 */
+.menu-KMJ-PJH li:hover .dropdown-KMJ-PJH {
+  display: block;
+}

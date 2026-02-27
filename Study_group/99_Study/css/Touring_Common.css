@@ -1,0 +1,37 @@
+/* 전체 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 가독성 좋은 글꼴 세트 및 기본 여백 */
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  
+  /* 페이지 전체 좌우 여백 (선택사항) */
+  padding: 0;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 링크 기본 스타일 제거 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 리스트 기본 불릿 제거 (팀별로 이미 적용되어 있으나 공통 적용 권장) */
+ul, li {
+  list-style: none;
+}
+
+/* 공통 섹션 간격 (Index.html에 배치될 각 섹션들 사이의 간격) */
+section {
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}

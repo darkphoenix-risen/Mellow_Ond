@@ -1,0 +1,75 @@
+#main {
+  margin: 0px auto;
+}
+#a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#a h1{
+  font-size: 20px;
+}
+#a li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+}
+#k {
+  position: relative; /* 글씨 위치 기준 */
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#k img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#k p {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  margin: 20px;
+  font-size: 30px;
+}
+#q {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#q img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.c {
+  background-color: lightblue;
+  color: light grey;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 17px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+}
+#q a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+#q span{
+  display: inline-block;
+  background-color: lightblue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}

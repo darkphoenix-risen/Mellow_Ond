@@ -1,0 +1,85 @@
+
+.MS-container {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.MS-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.MS-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.MS-list {
+    display: flex;
+    overflow-x: scroll; /* 가로 스크롤 활성화 */
+    gap: 30px;
+    justify-content: flex-start;
+    padding-bottom: 15px; 
+    
+    /* 중요: 스크롤 스냅 타입 설정 (필수) */
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
+
+    /* 스크롤바 숨기기 */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.MS-list::-webkit-scrollbar {
+    display: none;
+}
+
+.MS-item {
+    flex: 0 0 auto;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    /* 중요: 스크롤 정렬 위치 설정 (중앙에 스냅) */
+    scroll-snap-align: center; 
+}
+
+.MS-item a {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
+.MS-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    grid-area: 1/1/2/2; 
+}
+
+.MS-item img:hover {
+    transform: scale(1.1);
+}
+
+.MS-item span {
+    grid-area: 1/1/2/2;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    pointer-events: none; 
+    white-space: nowrap;
+    font-size: 1em;
+}

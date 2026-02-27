@@ -1,0 +1,55 @@
+#list-Esther li {
+  list-style-type: none;
+}
+
+#list-Esther li {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#swip_Esther {
+  display: inline-block;
+}
+
+.tab {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .menu li {
+      padding: 10px 15px;
+      background-color: #eee;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .menu li.on {
+      background-color: #6bc9ff;
+      color: white;
+      font-weight: bold;
+    }
+
+ 
+
+    .content > div.on {
+      display: block;
+    }
+
+    .content span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
