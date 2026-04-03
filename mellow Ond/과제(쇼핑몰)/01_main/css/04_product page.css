@@ -274,7 +274,7 @@ hr {
 
 /* 바로 구매하기 버튼 (강렬한 스타일) */
 .btn-buy {
-  background-color: #111;
+  background-color: rgba(151, 138, 123, 0.8);
   color: #fff;
 }
 
@@ -291,7 +291,7 @@ hr {
 }
 
 .btn-list:hover {
-  background-color: #808080;
+  background-color:#e5e5e5;
   transform: translateY(-2px); /* 살짝 떠오르는 효과 */
 }
 
