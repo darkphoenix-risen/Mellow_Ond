@@ -152,7 +152,8 @@ a {
 .header-right { 
                position: absolute;
                transform: translateX(760px);
-               margin-top: 22px;               
+               margin-top: 22px;   
+               margin-right: 130px;            
 }
 .login-btn {
   font-family: 'Montserrat', sans-serif; /* 영문 폰트 추천 */
@@ -325,6 +326,7 @@ a {
 .container-box {
   width: 100%;
   height: 3000px;
+  position: relative;  
 }
 
 .product-class3 {
@@ -332,8 +334,10 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: absolute;
-  transform: translateX(430px);
+  /* transform: translateX(430px); */
   margin-top: 80px;
+  align-content: center;
+  margin-left: 215px;
 }
 .product3 img {
   width: 350px;
